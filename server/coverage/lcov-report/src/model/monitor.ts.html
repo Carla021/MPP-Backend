@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">69.23% </span>
+                <span class="strong">7.69% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/13</span>
+                <span class='fraction'>1/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">55.55% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/9</span>
+                <span class='fraction'>0/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">69.23% </span>
+                <span class="strong">7.69% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/13</span>
+                <span class='fraction'>1/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -116,14 +116,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -135,7 +135,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -143,7 +143,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -151,7 +151,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export class Monitor {
     private id: number;
@@ -159,16 +159,16 @@
     private refreshRate: string;
     private pictureUrl: string;
 &nbsp;
-    public constructor(id: number, brand: string, refreshRate: string, pictureUrl: string)
+<span class="fstat-no" title="function not covered" >    public constructor(i</span>d: number, brand: string, refreshRate: string, pictureUrl: string)
     {
-        this.id = id;
-        this.brand = brand;
-        this.refreshRate = refreshRate;
-        this.pictureUrl = pictureUrl;
+<span class="cstat-no" title="statement not covered" >        this.id = id;</span>
+<span class="cstat-no" title="statement not covered" >        this.brand = brand;</span>
+<span class="cstat-no" title="statement not covered" >        this.refreshRate = refreshRate;</span>
+<span class="cstat-no" title="statement not covered" >        this.pictureUrl = pictureUrl;</span>
     }
 &nbsp;
-    public getId() : number {
-        return this.id;
+    public <span class="fstat-no" title="function not covered" >getId(</span>) : number {
+<span class="cstat-no" title="statement not covered" >        return this.id;</span>
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >setId(</span>newId: number) {
@@ -179,24 +179,24 @@
 <span class="cstat-no" title="statement not covered" >        return this.brand;</span>
     }
 &nbsp;
-    public setBrand(newBrand: string) {
-        this.brand = newBrand;
+    public <span class="fstat-no" title="function not covered" >setBrand(</span>newBrand: string) {
+<span class="cstat-no" title="statement not covered" >        this.brand = newBrand;</span>
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >getRefreshRate(</span>): string {
 <span class="cstat-no" title="statement not covered" >        return this.refreshRate;</span>
     }
 &nbsp;
-    public setRefreshRate(newRefreshRate: string) {
-        this.refreshRate = newRefreshRate;
+    public <span class="fstat-no" title="function not covered" >setRefreshRate(</span>newRefreshRate: string) {
+<span class="cstat-no" title="statement not covered" >        this.refreshRate = newRefreshRate;</span>
     }
 &nbsp;
     public <span class="fstat-no" title="function not covered" >getPictureUrl(</span>): string {
 <span class="cstat-no" title="statement not covered" >        return this.pictureUrl;</span>
     }
 &nbsp;
-    public setPictureUrl(newPictureUrl: string) {
-        this.pictureUrl = newPictureUrl;
+    public <span class="fstat-no" title="function not covered" >setPictureUrl(</span>newPictureUrl: string) {
+<span class="cstat-no" title="statement not covered" >        this.pictureUrl = newPictureUrl;</span>
     }
 }</pre></td></tr></table></pre>
 
@@ -205,7 +205,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2024-04-09T11:19:29.210Z
+                at 2024-04-29T20:27:03.332Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

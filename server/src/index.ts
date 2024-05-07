@@ -8,12 +8,13 @@ const app = require('./app');
 const server = http.createServer(app);
 const io = new Server(server);
 
+
 io.on('connection', (socket) => {
     setInterval(() => {
         const monitor: Monitor = createMonitor();
         monitors.push(monitor);
         socket.emit('newMonitor', monitor);
-    }, 7000);
+    }, 7000000);
 });
 
 const PORT = process.env.PORT || 5000;
