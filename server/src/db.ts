@@ -35,6 +35,16 @@ const createReviewsTableSQL = `
     )
 `;
 
+// Define the SQL query to create the 'registration' table for user registration
+const createRegistrationTableSQL = `
+    CREATE TABLE IF NOT EXISTS registration (
+        id INTEGER PRIMARY KEY,
+        name TEXT,
+        email TEXT,
+        password TEXT
+    )
+`;
+
 // Execute the SQL query to create the 'monitors' table
 db.run(createTableSQL, (err) => {
     if (err) {
@@ -50,6 +60,15 @@ db.run(createReviewsTableSQL, (err) => {
         console.error("Error creating 'reviews' table:", err.message);
     } else {
         console.log("Successfully created 'reviews' table.");
+    }
+});
+
+// Execute the SQL query to create the 'registration' table
+db.run(createRegistrationTableSQL, (err) => {
+    if (err) {
+        console.error("Error creating 'registration' table:", err.message);
+    } else {
+        console.log("Successfully created 'registration' table.");
     }
 });
 
